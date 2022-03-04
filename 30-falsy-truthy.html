@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        /*  Data dianggap falsy     Keterangan
+            false                   Boolean false
+            0, -0                   Number 0 dan -0 dianggap false
+            "", '', ``              Semua string kosong dianggap false
+            null                    null dianggap false 
+            undefined               undefined dianggap false
+            NaN                     Not a Number dianggap false
+        */ 
+
+        let data = ""; // false 
+        data = "Azura"; // true
+        data = false; // false
+        data = 2; // true
+        data = 0; // false
+        data = -1 // true
+        data = {}; // true
+        data = []; // true 
+        data = null; // false
+        data = undefined // false
+
+        if(data){
+            document.writeln("TRUE");
+        } else {
+            document.writeln("FALSE");
+        }
+
+    </script>
+</body>
+</html>

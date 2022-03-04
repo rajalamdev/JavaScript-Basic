@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*  Operator  |  Keterangan
+        -------------------------------
+              &&          AND
+              ||          OR
+              !           NOT
+        -------------------------------    
+        Note: 
+        && (AND), bila salah satu nilai bernilai FALSE maka hasilnya akan FALSE
+        || (OR) , bila salah satu nilai bernilai TRUE maka hasilnya akan TRUE
+        !  (!)  , merupakan operator kebalikan / TRUE = FALSE, FALSE = TRUE
+        */
+
+        const nilaiUjian = 70;
+        const nilaiSikap = 90;
+
+        const lulusUjian = nilaiUjian > 75; // false
+        const lulusSikap = nilaiSikap > 75; // true
+
+        const lulus = lulusUjian || lulusSikap; // true
+        document.writeln(lulus);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // if expression
+        const nilai = "A";
+        if(nilai == "A"){
+            console.info("Selamat anda lulus dengan baik");
+        } else if(nilai == "B" || nilai == "C") {
+            console.info("Selamat anda lulus");
+        } else if(nilai == "D"){
+            console.info("Mohon maaf anda dinyatakan tidak lulus");
+        } else {
+            console.info("Anda tidak lulus...Mungkin anda salah jurusan :v");
+        }
+        
+        // switch expression
+        switch(nilai){
+            case "A":
+                console.info("Selamat anda lulus dengan baik");
+                break;
+            case "B":
+            case "C":
+                console.info("Selamat anda lulus");
+                break;
+            case "D": 
+                console.info("Mohon maaf anda dinyatakan tidak lulus");
+                break;
+            default:   
+                console.info("Anda tidak lulus...Mungkin anda salah jurusan :v");
+        }
+
+    </script>
+</body>
+</html>

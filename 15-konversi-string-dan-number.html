@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*  Function                Keterangan
+            parseInt(string)        Mengkonversi dari string ke Number (bilangan bulat)
+            parseFloat(string)      Mengkonversi dari string ke Float (bilangan pecahan)
+            Number(string)          Mengkonversi dari string ke Number (bilangan bulat atau pecahan)
+            number.toString()       Mengonversi dari number ke String
+        */ 
+
+        const value1 = 1;
+        const value2 = "1";
+                 // string + string
+        const sum = value1 + value2;
+        document.writeln(`<p> ${sum} </p>`);
+
+        const a = 1;
+        const b = "1";
+                // number + number
+        const total = a + parseInt(b);
+        document.writeln(`<p> ${total} </p>`)
+
+        // NaN
+        document.writeln(`<p> ${parseInt("tes")} </p>`); // NaN
+        document.writeln(`<p> ${parseInt("2tes")} </p>`); // 2
+
+        document.writeln(`<p> ${parseFloat("tes")} </p>`); // NaN
+        document.writeln(`<p> ${parseFloat("1.1float")} </p>`); // 1.1
+
+        document.writeln(`<p> ${Number("1tes")} </p>`); // NaN
+        document.writeln(`<p> ${Number("tes1")} </p>`)  // NaN
+        document.writeln(`<p> ${Number("1")} </p>`)     // 1
+
+        // Operasi pada NaN
+        const value3 = Number("tes"); // NaN
+        const value4 = 70; 
+
+        const sum2 = value3 + value4; // NaN
+
+        document.writeln(sum2); // NaN
+
+        // Mengecek apakah sebuah value itu NaN atau bukan
+        // untuk mengecek nya, kita bisa menggunakan function isNaN(Number)
+        // Hasil nya adalah berupa data boolean, true jika NaN, false jika bukan
+
+        document.writeln(`<p> ${isNaN(value3)} </p>`); // true
+        document.writeln(`<p> ${isNaN(value4)} </p>`); // false
+
+    </script>
+</body>
+</html>

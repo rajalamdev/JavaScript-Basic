@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // operator in : berfungsi untuk mengecek apakah property berada di object atau tidak
+        const person = {
+            firstName: "Azura",
+            middleName: "Aramu",
+            lastName: "San"
+        }
+
+        const result = "middleName" in person; // true
+        document.writeln(`<p>${result}</p>`);
+        
+        // Note: In operator hanya akan mengecek apakah sebuah property atau index ada atau tidak 
+        //       jadi walaupun nilai property nya undefined atau null, maka akan dianggap ada
+        const teacher = {
+            firstName: null,
+            middleName: "Poernomo",
+            lastName: undefined
+        }
+        const results = "lastName" in teacher; // true
+        document.writeln(`<p> ${results} </p>`);
+
+                        // 0        1       2
+        const students = [null, "Bujang", null];
+        const dataResults = 2 in students; // true
+        document.writeln(`<p> ${dataResults} </p>`);
+        
+    </script>
+</body>
+</html>

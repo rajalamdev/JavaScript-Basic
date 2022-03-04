@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // OR
+        /* - Operator logika OR (||), membaca dari kiri ke kanan.
+           - Operator ini akan mengaambil nilai pertama yang truthy / true.
+           - Jika tidak ada satupun yang bernilai truthy / true, maka yang terakhir yang akan diambil 
+        */ 
+        console.info("Azura" || ""); // Azura
+        console.info("" || []); // []
+        console.info("0" || "NOL") // 0
+        console.info("" || {}); // {}
+        console.info(0 || "NOL") // NOL
+        console.info("" || 0); // 0
+        console.info("UNDEFINED" || undefined); // UNDEFINED
+        console.info("NULL" || null); // NULL
+
+        const person = {
+            firstName: null,
+            lastName: "Aramu"
+        }
+
+        const name = person.firstName || person.lastName;
+        document.writeln(`<p> ${name} </p>`);
+
+
+        console.info("------------------------------------");
+
+
+        // AND
+        /* - Operator logika AND (&&), membaca dari kiri ke kanan.
+           - Operator ini akan mengambil nilai pertama yang falsy / false.
+           - Jika tidak ada satupun yang bernilai falsy / false, maka yang terakhir yang akan diambil 
+         */ 
+        console.info("Azura" && 0); // 0
+        console.info(null && []); // null
+        console.info("0" && "NOL") // NOL
+        console.info(null && {}); // {}
+        console.info(0 && "NOL") // 0
+        console.info(undefined && 0); // undefined
+        console.info("UNDEFINED" && undefined); // undefined
+        console.info("NULL" && null); // null
+
+        const student = {
+            firstName: "Keqing",
+            lastName: undefined
+        }
+
+        const names = student.firstName && student.lastName;
+        document.writeln(`<p> ${names} </p>`);
+
+    </script>
+</body>
+</html>

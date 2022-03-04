@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const array = [2, 34, 24, 54, 24, 32, 213];
+        const searchArray = 24;
+
+        function data(array, searchArray){
+            for(const index of array){
+                console.info(index); // menampilkan index array dalam console
+                if(index === searchArray){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        const found = data(array, searchArray);
+        document.writeln(`<p> ${found} </p>`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const firstName = "Azura";
+        const middleName = "Aramu";
+        const lastName = "San";
+
+        // string plus (ribet)
+     
+        console.info("Nama: " + firstName + " " + middleName + " " + lastName + " ");
+
+        // string template (efisien)
+        const template = `Nama: ${firstName} ${middleName} ${lastName}`;
+        console.info(template)
+
+        // ekspresi
+        const nama = "Raj Alam";
+        const nilai = 90;                         // ekspresi
+        const template2 = `Nama: ${nama}, Lulus: ${nilai > 75}`;
+
+        console.info(template2);
+
+        // multiline
+        const multiline = `Nama saya adalah Azura,
+        Hobi saya adalah tidak melakukan apa apa
+        tidak melakukan apa apa adalah hobi saya 
+        that's about me!
+        `;
+        document.writeln("<pre>");
+        document.writeln(multiline);
+        document.writeln("</pre>");
+
+    </script>
+</body>
+</html>

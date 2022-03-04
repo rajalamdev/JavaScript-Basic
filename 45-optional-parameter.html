@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person(firstName, middleName, lastName){
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+        }
+
+        // note: di bahasa pemrograman lain saat parameter tidak diisi akan terjadi error
+        //       berbeda dengan javascript apabila parameter tidak diisi maka akan menghasilkan undefined
+        //       karena javascript adalah dynamic languange.
+
+        person(); // undefined undefined undefined
+        person("Azura"); // Azura undefined undefined
+        person("Azura", "Aramu"); // Azura Aramu undefined
+        person("Azura", "Aramu", "San"); // Azura Aramu San
+
+    </script>
+</body>
+</html>

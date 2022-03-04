@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // Note: - for in lebih sering digunakan untuk Object, tidak disarankan untuk Array
+        //       - for in digunakan untuk melakukan iterasi property atau index
+        const person = {
+            firstName: "Azura",
+            middleName: "Aramu",
+            lastName: "San"
+        }
+
+        for(const property in person){
+            document.writeln(`<p>Property: ${property}, Value: ${person[property]} </p>`)
+        }
+
+    </script>
+</body>
+</html>

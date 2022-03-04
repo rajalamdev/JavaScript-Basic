@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*  - Function generator adalah function yang digunakan untuk membuat data generator
+            - Generator adalah data yang bisa di iterasi seperti Array
+            - Untuk membuat function generator, kita perlu menggunakan tanda * (bintang) setelah kata function
+            - Dan untuk mengembalikan data di tiap iterasi, kita bisa gunakan kata kunci yield diikuti datanya
+            - Generator hanya bisa diiterasi, tidak bisa diakses berupa index bahkan diubah datanya
+        */ 
+
+        function* person(){
+            yield "Azura";
+            yield "Aramu";
+            yield "San";
+        }
+
+        const names = person();
+
+        for(const index of names){
+            document.writeln(`<p> ${index} </p>`);
+        }
+
+
+    </script>
+</body>
+</html>

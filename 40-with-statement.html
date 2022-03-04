@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // tanpa with statement
+        const person = {
+            firstName: "Azura",
+            middleName: "Aramu",
+            lastName: "San"
+        }
+
+        console.info(person.firstName);
+        console.info(person.middleName);
+        console.info(person.lastName);
+
+        // dengan with statement
+        const biodata = {
+            nama: "budi",
+            hobi: "nganu",
+            motivasi_hidup: "hidup seperti larry."
+        }
+
+        with(biodata){
+            console.info(nama);
+            console.info(hobi);
+            console.info(motivasi_hidup);
+        }
+
+        // Note: walaupun fitur ini sangat menarik namun with statement tidak direkomensadikan
+        //       hal ini dikarenakan with statement kadang membuat sebuah kode mnejadi ambigu
+
+    </script>
+</body>
+</html>

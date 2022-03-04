@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // tanpa ternary operator
+        const nilai = 80;
+        let ucapan;
+
+        if(nilai >= 75){
+            ucapan = "Selamat anda lulus tes";
+        } else {
+            ucapan = "Mohon maaf anda tidak lulus";
+        }
+
+        document.writeln(`<p> ${ucapan} </p>`)
+
+
+        // meggunakan ternary operator
+        const value = 80;
+        const greetings = value >= 75 ? "Selamat anda lulus tes" : "Mohon maaf anda tidak lulus";
+
+        document.writeln(`<p> ${greetings} </p>`)
+
+    </script>
+</body>
+</html>

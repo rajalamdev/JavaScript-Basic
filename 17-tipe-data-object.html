@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Note: Object mirip dengan array, salah satu perbedaan nya bisa dilihat console(index table) yang berada di browser
+        const person = {};
+        person["nama"] = "Azura";
+        person["umur"] = 17;
+        person["hobi"] = "nonton nimek";
+        console.table(person);
+
+        const biodata = {
+            nama: "Soekitman Poernomo",
+            kelas: 12,
+            hobi: "tidak ada",
+            "cita cita": "ora punya",
+            bakat: "turu"
+        };
+        console.table(biodata);
+
+        // mengakses property object
+        console.info(`Nama: ${biodata.nama}`);
+        console.info(`Kelas: ${biodata.kelas}`);
+        console.info(`Hobi: ${biodata.hobi}`);
+        console.info(`Cita Cita: ${biodata["cita cita"]}`);
+        console.info(`Bakat: ${biodata.bakat}`);
+
+    </script>
+</body>
+</html>

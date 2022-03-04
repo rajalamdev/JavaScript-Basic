@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*  - Function tidak hanya bisa digunakan sebagai kode program yang dieksekusi, 
+            tapi bisa juga sebagai value di dalam variable
+            - Artinya, function bisa disimpan di variable, bisa juga dikirim melalui parameter ke function lainnya
+        */ 
+
+        // function sebagai variable
+        function sayHello(name){
+            document.writeln(`<p>Hello ${name} </p>`);
+        }
+
+        sayHello("Azura");
+
+        const say = sayHello; // Kenapa gak pakai sayHello() ? karena () digunakan untuk memanggil function...sementara kita hanya ingin menyimpan function di dalam variable
+        say("Azura");
+
+        
+        // mengirim function ke dalam parameter function lain
+        function giveMeName(callback){
+            callback("Keqing"); // callback("Keqing") => sayHello("Keqing")
+        } 
+
+        giveMeName(sayHello);
+        giveMeName(say); // giveMeName(sayHello)
+
+    </script>
+</body>
+</html>

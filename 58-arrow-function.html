@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // arrow function seperti anonymous function tidak bisa berdiri sendiri tanpa variable
+        
+        // arrow function (block)
+        const sayHello = (name) => {
+            let person = (`Hello ${name}`);
+            console.log(person);
+        }
+
+        sayHello("Azura");
+
+
+        // arrow function return value (block)
+        const sum = (first, second) => {
+            return first + second;
+        }        
+
+        console.log(sum(10, 14));
+
+
+        // arrow function (tanpa block)
+        const katakanHello = (nama) => console.log(`Hello ${nama}`);
+
+        katakanHello("Azura");
+
+
+        // arrow function return value (tanpa block)
+        const jumlahkan = (angka1, angka2) => angka1 + angka2;
+
+        console.log(jumlahkan(14, 10));
+
+
+        // arrow function sebagai parameter
+        function giveMeName(callback){
+            callback("Azura");
+        }
+
+        giveMeName((name) => {
+            console.log(`Hello ${name}`);
+        })
+
+
+
+    </script>
+</body>
+</html>

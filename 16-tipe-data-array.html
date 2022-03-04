@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*  Operasi                 Keterangan
+            array.push(value)       Menambah data ke array
+            array.length            Untuk mendapatkan panjang array
+            array[index]            Mendapat data di posisi index
+            array[index] = value    Mengubah data di posisi index
+            delete array[index]     Menghapus data di posisi index, namun index tidak tergeser
+        */ 
+        
+        let dataArray = ["Azura", "Aramu", "San"];
+        console.table(dataArray)    
+
+        // Menambah data Array
+        let names = [];
+        names.push("Azura");
+        names.push("Aramu", "Desu");
+        console.table(names);
+
+        console.info(names.length); // 3
+
+        console.info(names[0]); // Azura
+        
+        // mengubah data
+        names[0] = "Alam"; 
+        console.table(names); 
+
+        delete names[0];
+        console.table(names);
+
+        names[0] = "Azura";
+        console.table(names)
+
+    </script>
+</body>
+</html>

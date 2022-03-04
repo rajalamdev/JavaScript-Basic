@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*  Type            Hasil operator typeof
+            Undefined       "undefined"       
+            Null            "object"
+            Boolean         "boolean"
+            Number          "number"
+            BitInt          "bitint"
+            String          "string"
+            Symbol          "symbol"
+            Function        "function"
+            Lainnya         "object"
+        */ 
+
+        let data;
+        const typeData = typeof data;
+
+        switch(typeData){
+            case "number":
+                alert("Number");
+                break;
+            case "string":
+                alert("String");
+                break;
+            case "boolean":
+                alert("Boolean");
+                break;
+            case "null":
+                alert("Null");
+                break;
+            case "undefined":
+                alert("Undefined");
+                break;
+            default:
+                alert("Object");
+        }
+
+    </script>
+</body>
+</html>
